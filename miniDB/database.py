@@ -16,6 +16,7 @@ from tabulate import tabulate
 
 # Clear command cache (journal)
 readline.clear_history()
+logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
 
 class Database:
     '''
